@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* POST page 
+============================================= */
+
+.create-post {
+  width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.post-ttl {
+  color: gray;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.post-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.post-item,
+.post-body {
+  padding: 20px;
+  border: 1px solid rgb(33, 150, 243);
+}
+
+.post-item {
+  text-align: left;
+  width: 30%;
+  color: white;
+  background-color: rgb(33, 150, 243);
+}
+
+.post-body {
+  width: 70%;
+}
+
+.post-text {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 400px;
+}
+
+.post-textarea {
+  width: 95%;
+  padding: 10px;
+  height: 200px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.post-lang {
+  display: block;
+}
+
+.post-lang + .post-lang {
+  margin-top: 10px;
+}
+
+.post-lang-txt {
+  margin-left: 5px;
+}
+
+.post-submit {
+  width: 250px; /* 横幅指定 */
+  background-color: rgb(33, 150, 243); /* 背景色 */
+  color: #fff; /* 文字色 */
+  font-weight: bold; /* 文字の太さ */
+  display: block; /* インライン要素をブロック要素に変更 */
+  margin: 0 auto; /* 中央寄せ */
+  font-size: 16px; /* 文字の大きさ */
+  padding: 15px; /* 内側の余白 */
+  border-radius: 100vh; /* 角丸指定 */
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
