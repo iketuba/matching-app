@@ -35,7 +35,7 @@ function Home() {
             variant="contained"
             component={Link}
             to="/profile"
-            sx={{ display: "flex" }}
+            sx={{ display: "flex"}}
           >
             <p>新規投稿作成</p>
           </Button>
