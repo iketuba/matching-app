@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import {Home, Register, Login, Profile, MailSending} from './page/index'
+import {Home, Register, Login, Profile, MailSending, Post} from './page/index'
 import { AuthProvider } from './context/Authcontext';
 
 
@@ -14,6 +14,7 @@ function App() {
           <Route path='/user/login' element={<Login />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/mailsending' element={<MailSending />} />
+          <Route path='/newpost' element={<Post />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
