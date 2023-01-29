@@ -34,8 +34,8 @@ function Home() {
           <Button
             variant="contained"
             component={Link}
-            to="/profile"
-            sx={{ display: "flex"}}
+            to="/newpost"
+            sx={{ display: "flex", width: "15%", margin: "0 auto" }}
           >
             <p>新規投稿作成</p>
           </Button>
@@ -58,7 +58,7 @@ function Home() {
               <p>タイトル: {post.title}</p>
               <p>説明: {post.description}</p>
               {/* <p>時期: {post.time}</p> */}
-              <p>開発言語: {typeof(post.lang)}</p>
+              <p>開発言語: {typeof post.lang}</p>
 
               {/* {for (const [key, value] of Object.entries(post.lang)) {
                 return key
