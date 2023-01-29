@@ -180,6 +180,7 @@ class Post extends React.Component {
                         className='post-submit'
                         type='submit'
                         value='新規作成'
+                        formaction='/'
                     />
                 </form>
             </div>
