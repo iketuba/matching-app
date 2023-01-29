@@ -1,4 +1,4 @@
-import { collection, addDoc, Timestamp } from 'firebase/firestore';
+import { collection, addDoc } from 'firebase/firestore';
 import React from 'react';
 import db from '../firebase';
 
@@ -67,7 +67,6 @@ class Post extends React.Component {
             content: this.state.content,
             sns: this.state.sns
         };
-        console.log(this.state.lang)
         const docRef = addDoc(collection(db, "post"), data);
         console.log("Document written with ID: ", docRef.id);
     }
@@ -180,7 +179,7 @@ class Post extends React.Component {
                         className='post-submit'
                         type='submit'
                         value='新規作成'
-                        formaction='/'
+                        formAction='../'
                     />
                 </form>
             </div>
