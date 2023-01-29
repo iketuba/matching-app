@@ -9,7 +9,6 @@ import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 function Home() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    // データベースからデータを取得する。
     const postData = collection(db, "post");
     getDocs(postData).then((snapShot) => {
       setPosts(snapShot.docs.map((doc) => ({ ...doc.data() })));
@@ -35,7 +34,7 @@ function Home() {
             variant="contained"
             component={Link}
             to="/newpost"
-            sx={{ display: "flex" }}
+            sx={{ display: "flex", width: "15%", margin: "0 auto" }}
           >
             <p>新規投稿作成</p>
           </Button>
@@ -57,16 +56,9 @@ function Home() {
             >
               <p>タイトル: {post.title}</p>
               <p>説明: {post.description}</p>
-              {/* <p>時期: {post.time}</p> */}
-              <p>開発言語: {typeof(post.lang)}</p>
-
-              {/* {for (const [key, value] of Object.entries(post.lang)) {
-                return key
-              }} */}
-
+              <p>開発言語: {post.lang}</p>
               <p>募集内容: {post.content}</p>
               <p>SNS URL: {post.sns}</p>
-              {/* <button onClick={() => (deleteDoc(doc(db, 'post', post.id)))}>削除</button> */}
             </Box>
           </div>
         ))}
